@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <form style="font-size: 18px; font-family: 'Arial'; ">
+        <b>Sponsor Company Name:</b>
+        <br>
+        <input type="text" name="companyName">
+        <br>
+        <br>
+        
+        <b>Sponsor ID:</b>
+        <br>
+        <input type="text" name="sponsorID">
+        <br>
+        <br>
+        
+        <b>Contact Name:</b>
+        <br>
+        <input type="text" name="contactName">
+        <br>
+        <br>
+        
+        <b>Contact Phone:</b>
+        <br>
+        <input type="text" name="phone">
+        <br>
+        <br>
+        
+        <b>Contact email:</b>
+        <br>
+        <input type="text" name="email">
+        <br>
+        <br>
+        
+        <b>Contact website:</b>
+        <br>
+        <input type="text" name="website">
+        <br>
+        <br>
+        
+        <b>lead or prospect:</b>
+        <br>
+        <input type = "radio" name = "prospectLeadSold" value = "prospect" checked>prospect<br>
+        <input type = "radio" name = "prospectLeadSold" value = "lead">lead<br> 
+        <input type = "radio" name = "prospectLeadSold" value = "sold">sold<br> 
+        <br>
+        
+        <b>priority:</b>
+        <br>
+        <input type = "radio" name = "priority" value = "1">1    
+        <input type = "radio" name = "priority" value = "2">2    
+        <input type = "radio" name = "priority" value = "3" checked>3    
+        <input type = "radio" name = "priority" value = "4">4    
+        <input type = "radio" name = "priority" value = "5">5
+        <br>
+        <br>
+        
+        <input type="submit" name = "myButton" value="Submit"
+            onclick="
+              form.myButton.disabled = true; 
+              google.script.run
+                .withSuccessHandler(google.script.host.close)
+                .itemAdd(this.parentNode);" />
+    </form>
+  </body>
+  <script type="text/javascript"> 
+  </script>
+</html>
