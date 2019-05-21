@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <form style="font-size: 18px; font-family: 'Arial'; ">
+        <b>Business Name:</b>
+        <br>
+        <input type="text" name="companyName">
+        <br>
+        <br>
+        
+        <b>Contact First Name:</b>
+        <br>
+        <input type="text" name="firstName">
+        <br>
+        <br>
+        
+        <b>Contact Last Name:</b>
+        <br>
+        <input type="text" name="lastName">
+        <br>
+        <br>
+        
+        <b>Contact phone number:</b>
+        <br>
+        <input type="text" name="phone">
+        <br>
+        <br>
+        
+        <b>Contact Email:</b>
+        <br>
+        <input type="text" name="email">
+        <br>
+        <br>
+        
+        <b>Website:</b>
+        <br>
+        <input type="text" name="website">
+        <br>
+        <br>
+        
+        <b>Business Type:</b>
+        <br>
+        <input type="text" name="businessType">
+        <br>
+        <br>
+        
+        <b>What are the Advertiser's target subscribers?</b>
+        <br>
+        <input type = "radio" name = "targetSub" value = "general clients">general clients
+        <br>
+        <input type = "radio" name = "targetSub" value = "realtors">realtors
+        <br>
+        <input type = "radio" name = "targetSub" value = "both" checked>both
+        <br>
+        <br>
+        
+        <input type="submit" name = "myButton" value="Submit"
+            onclick="
+              form.myButton.disabled = true; 
+              google.script.run
+                .withSuccessHandler(google.script.host.close)
+                .itemAddNA(this.parentNode);" />
+    </form>
+  </body>
+  <script type="text/javascript"> 
+  </script>
+</html>
